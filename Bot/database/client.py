@@ -1,5 +1,9 @@
 from pymongo import MongoClient
 
+client = MongoClient('localhost', 27017, connectTimeoutMS=5000)
+db = client['mydatabase']
+
+
 DATABASE_URL = 'mongodb://localhost:27017/'
 OWNER_ID = 1234
 
