@@ -1,17 +1,14 @@
 from pymongo import MongoClient
 
-client = MongoClient('localhost', 27017, connectTimeoutMS=5000)
-db = client['mydatabase']
 
-
-DATABASE_URL = 'mongodb://localhost:27017/'
-OWNER_ID = 1234
+DATABASE_URL = 'mongodb+srv://Mithun567:GXRWFO84nwoJOVRv@cluster0.8jdtiuw.mongodb.net/?retryWrites=true&w=majority'
+OWNER_ID = 1029123413
 
 # Constants for collection names
-TYPEDB = 'SoheruGroup'
+TYPEDB = 'Movix'
 USERS = 'users'
 CHANNELS = 'channels'
-GLOBALDB = 'globaldb'
+GLOBALDB = 'Movix'
 RSS = 'rss'
 
 clientdb = MongoClient(DATABASE_URL)
